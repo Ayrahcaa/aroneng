@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aroneng/static/css/main.0760fe18.css",
+    "main.js": "/aroneng/static/js/main.60d66e2e.js",
+    "static/media/blog01.png": "/aroneng/static/media/blog01.cefc0932eae0d33a0342.png",
+    "static/media/blog03.png": "/aroneng/static/media/blog03.d922323861096f25274f.png",
+    "static/media/blog04.png": "/aroneng/static/media/blog04.742c1357e7b6c11078e6.png",
+    "static/media/blog05.png": "/aroneng/static/media/blog05.bfaa1c1e3851158e0e1f.png",
+    "static/media/blog02.png": "/aroneng/static/media/blog02.ab0eb367561796e91532.png",
+    "static/media/project3.png": "/aroneng/static/media/project3.8bd081bfc48ef46256b2.png",
+    "static/media/contactus.png": "/aroneng/static/media/contactus.af19ee5b8f106db2a5e5.png",
+    "static/media/project2.png": "/aroneng/static/media/project2.1a7d93b8df7684c23327.png",
+    "static/media/project1.png": "/aroneng/static/media/project1.28dece675c5bc36cc37c.png",
+    "static/media/project4.png": "/aroneng/static/media/project4.4d25c1a006e0bfd17acd.png",
+    "index.html": "/aroneng/index.html",
+    "main.0760fe18.css.map": "/aroneng/static/css/main.0760fe18.css.map",
+    "main.60d66e2e.js.map": "/aroneng/static/js/main.60d66e2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0760fe18.css",
+    "static/js/main.60d66e2e.js"
+  ]
+}
