@@ -38,7 +38,7 @@
   font-size: 18px;
   font-family: var(--font-family);
   line-height: 21px;
-  color: #fff;
+  color: #777777;
   word-spacing: 2px;
 }
 
@@ -74,7 +74,7 @@
   font-family: var(--font-family);
   font-size: 12px;
   line-height: 15px;
-  color: #fff;
+  color: #777777;
 }
 
 .gpt3__footer-links_div {
@@ -87,7 +87,7 @@
   font-size: 14px;
   line-height: 17px;
   font-family: var(--font-family);
-  color: #fff;
+  color: #777777;
 
   margin-bottom: 0.9rem;
 }
@@ -96,7 +96,7 @@
   font-size: 12px;
   line-height: 15px;
   font-family: var(--font-family);
-  color: #fff;
+  color: #777777;
 
   margin: 0.5rem 0;
   cursor: pointer;
@@ -112,7 +112,7 @@
   font-size: 12px;
   font-family: var(--font-family);
   line-height: 15px;
-  color: #fff;
+  color: #777777;
 }
 
 @media screen and (max-width: 850px) {

@@ -8,24 +8,25 @@ import {
   WhatGPT3,
   Header,
 } from "./containers";
-import { CTA, Brand, Navbar } from "./components";
+import { CTA, Brand } from "./components";
 
 import "./App.css";
+import Layout from "./containers/Layout/Layout";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => (
-  <div className="App">
-    <div className="gradient__bg">
-      <Navbar />
-      <Header />
-    </div>
-    <Brand />
-    <WhatGPT3 />
-    <Features />
-    <Possibility />
-    <CTA />
-    <Blog />
-    <Footer />
-  </div>
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Header />} />
+      <Route path="/brand" element={<Brand />} />
+      <Route path="/whatgpt3" element={<WhatGPT3 />} />
+      <Route path="/features" element={<Features />} />
+      <Route path="/possibility" element={<Possibility />} />
+      <Route path="/cta" element={<CTA />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route index element={<Footer />} />
+    </Route>
+  </Routes>
 );
 
 export default App;

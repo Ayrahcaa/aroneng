@@ -1,73 +1,62 @@
 import React, { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../assets/AronLogo.png";
 import "./navbar.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../../assets/AronLogo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <img src={logo} />
+    <>
+      <nav className="main-nav">
+        {/* 1st logo part  */}
+        <div className="logo">
+          <img src={logo} alt="Aron" />
         </div>
-        <div className="gpt3__navbar-links_container">
-          <p>
-            <a href="#home">Home</a>
-          </p>
-          <p>
-            <a href="#wgpt3">About US</a>
-          </p>
-          <p>
-            <a href="#possibility">Contact</a>
-          </p>
-          <p>
-            <a href="#features">our services</a>
-          </p>
-          <p>
-            <a href="#blog">Projects</a>
-          </p>
-        </div>
-      </div>
 
-      <div className="gpt3__navbar-menu">
-        {toggleMenu ? (
-          <RiCloseLine
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
-        ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={27}
-            onClick={() => setToggleMenu(true)}
-          />
-        )}
-        {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
-              <p>
-                <a href="#home">Home</a>
-              </p>
-              <p>
-                <a href="#wgpt3">About US</a>
-              </p>
-              <p>
-                <a href="#possibility">Contact</a>
-              </p>
-              <p>
-                <a href="#features">our services</a>
-              </p>
-              <p>
-                <a href="#blog">Projects</a>
-              </p>
-            </div>
+        {/* 2nd menu part  */}
+        <div
+          className={
+            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+          }
+        >
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">about us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/service">our services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/project">projects</NavLink>
+            </li>
+            <li>
+              <NavLink to="/meetus">meet us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">contact us</NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="social-media">
+          {/* hamburget menu start  */}
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
           </div>
-        )}
-      </div>
-    </div>
+        </div>
+      </nav>
+
+      {/* hero section  */}
+      {/* <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Aron Engineering</h1>
+      </section> */}
+    </>
   );
 };
 
